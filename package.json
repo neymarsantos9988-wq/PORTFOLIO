@@ -1,0 +1,18 @@
+{
+  "name": "bijoy-chakma-portfolio",
+  "version": "1.0.0",
+  "description": "Full-Stack Developer Portfolio for Bijoy Chakma (BCA Student & Aspiring Frontend Developer)",
+  "scripts": {
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"magenta,cyan\" \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build:client": "npm --prefix client run build",
+    "seed": "npm --prefix server run seed",
+    "create-admin": "npm --prefix server run create-admin",
+    "test:server": "npm --prefix server test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
